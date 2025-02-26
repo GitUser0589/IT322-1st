@@ -30,12 +30,9 @@ if(isset($_POST['registration'])) {
         exit(0);
     }
 
-    // Securely hash the password before storing
-    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-
     // Insert user data
     $query = "INSERT INTO `users` (`firstName`, `lastName`, `email`, `password`, `phoneNumber`, `gender`, `birthday`) 
-              VALUES ('$firstName', '$lastName', '$email', '$hashed_password', '$number', '$gender', '$birthday')";
+              VALUES ('$firstName', '$lastName', '$email', '$password', '$number', '$gender', '$birthday')";
 
     if(mysqli_query($conn, $query)) {
         $_SESSION['message'] = "Registration successful";
