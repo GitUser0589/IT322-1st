@@ -56,6 +56,8 @@
                     <p class="text-center small">Enter your personal details to create account</p>
                   </div>
 
+                  <form method="POST" action="./controller/registration.php" class="row g-3 needs-validation" novalidate>
+
                   <form class="row g-3 needs-validation" novalidate>
                     <div class="col-12">
                       <label for="firstName" class="form-label">First Name</label>
@@ -78,8 +80,8 @@
 
                     
                     <div class="col-12">
-                      <label for="yourNumber" class="form-label">Phone Number</label>
-                      <input type="number" name="number" class="form-control" id="yourNumber" required>
+                      <label for="number" class="form-label">Phone Number</label>
+                      <input type="number" name="number" class="form-control" id="number" required>
                       <div class="invalid-feedback">Please enter a valid phone number!</div>
                     </div>
 
@@ -121,7 +123,7 @@
                       </div>
                     </div>
                     <div class="col-12">
-                      <button class="btn btn-primary w-100" type="submit">Create Account</button>
+                      <button class="btn btn-primary w-100" type="submit" name="registration">Create Account</button>
                     </div>
                     <div class="col-12">
                       <p class="small mb-0">Already have an account? <a href="./login.php">Log in</a></p>

@@ -8,7 +8,7 @@ if(isset($_POST['registration'])) {
     $email = $_POST['email'];
     $password = $_POST['password'];
     $cpassword = $_POST['cpassword'];
-    $number = $_POST['yourNumber'];
+    $number = $_POST['number'];
     $gender = $_POST['gender'];
     $birthday = $_POST['birthday'];
 
