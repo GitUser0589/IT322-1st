@@ -86,9 +86,9 @@
                     </div>
 
                     <div class="row mb-10">
-                  <label class="col-sm-10 col-form-label">Gender</label>
+                  <label  for="gender" class="col-sm-10 col-form-label">Gender</label>
                   <div class="col-lg-9">
-                    <select class="form-select" aria-label="Default select example">
+                    <select id="gender" class="form-select" aria-label="Default select example">
                       <option selected disabled>Select Gender</option>
                       <option value="male">Male</option>
                       <option value="female">Female</option>
@@ -97,9 +97,9 @@
                 </div>
 
                     <div class="row mb-12">
-                      <label for="inputDate" class="col-lg-9 col-form-label">Birthday</label>
+                      <label for="birthday" class="col-lg-9 col-form-label">Birthday</label>
                       <div class="col-lg-9">
-                      <input type="date" class="form-control">
+                      <input type="date" id="birthday" class="form-control">
                     </div>
 
 
